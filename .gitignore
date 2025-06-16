@@ -1,0 +1,6 @@
+.DS_Store
+minio-data
+nessie-data
+spark/
+spark-jars/
+notebook-seed/
