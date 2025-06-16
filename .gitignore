@@ -4,3 +4,4 @@ nessie-data
 spark/
 spark-jars/
 notebook-seed/
+zeppelin_notebook/

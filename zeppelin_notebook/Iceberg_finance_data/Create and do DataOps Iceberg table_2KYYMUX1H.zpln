@@ -3,7 +3,7 @@
     {
       "text": "%pyspark\n\nspark\n",
       "user": "anonymous",
-      "dateUpdated": "2025-06-16 05:41:35.614",
+      "dateUpdated": "2025-06-16 06:40:35.894",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -36,8 +36,8 @@
       "jobName": "paragraph_1749706390350_2107614697",
       "id": "paragraph_1749706390350_2107614697",
       "dateCreated": "2025-06-12 05:33:10.351",
-      "dateStarted": "2025-06-16 05:41:35.631",
-      "dateFinished": "2025-06-16 05:41:35.947",
+      "dateStarted": "2025-06-16 06:40:35.945",
+      "dateFinished": "2025-06-16 06:41:03.947",
       "status": "FINISHED"
     },
     {
