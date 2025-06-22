@@ -66,6 +66,10 @@ git clone git@github.com:riju18/apache-iceberg-kickstart.git
 cd apache-iceberg-kickstart
 ```
 
+### Download spark
+- download via this [link](https://drive.google.com/drive/u/0/folders/1-I2ggr-OfDk7dMFaYHy0mpFU4Kg9wqQb)
+- and place it into root dir
+
 ### 🐳 Start the Docker Environment
 
 ```sh
@@ -97,7 +101,4 @@ docker compose up -d
 
     - Username: `admin`
     - Password: `password`
-
-### 📁 Spark setup
--  coming ...
 
