@@ -458,7 +458,7 @@
         },
         "spark.app.name": {
           "name": "spark.app.name",
-          "value": "",
+          "value": "my_spark_app",
           "type": "string",
           "description": "The name of spark application."
         },
@@ -685,6 +685,11 @@
         "spark.hadoop.fs.s3a.path.style.access": {
           "name": "spark.hadoop.fs.s3a.path.style.access",
           "value": "true",
+          "type": "string"
+        },
+        "spark.sql.extensions": {
+          "name": "spark.sql.extensions",
+          "value": "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions",
           "type": "string"
         }
       },
