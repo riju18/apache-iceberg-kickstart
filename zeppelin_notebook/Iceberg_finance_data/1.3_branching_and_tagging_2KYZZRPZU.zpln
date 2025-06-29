@@ -1,0 +1,843 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\n\nspark",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:14:24.534",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n            \u003cdiv\u003e\n                \u003cp\u003e\u003cb\u003eSparkSession - in-memory\u003c/b\u003e\u003c/p\u003e\n                \n        \u003cdiv\u003e\n            \u003cp\u003e\u003cb\u003eSparkContext\u003c/b\u003e\u003c/p\u003e\n\n            \u003cp\u003e\u003ca href\u003d\"http://bf4d8d45c7df:4040\"\u003eSpark UI\u003c/a\u003e\u003c/p\u003e\n\n            \u003cdl\u003e\n              \u003cdt\u003eVersion\u003c/dt\u003e\n                \u003cdd\u003e\u003ccode\u003ev3.5.2\u003c/code\u003e\u003c/dd\u003e\n              \u003cdt\u003eMaster\u003c/dt\u003e\n                \u003cdd\u003e\u003ccode\u003elocal[*]\u003c/code\u003e\u003c/dd\u003e\n              \u003cdt\u003eAppName\u003c/dt\u003e\n                \u003cdd\u003e\u003ccode\u003emy_spark_app\u003c/code\u003e\u003c/dd\u003e\n            \u003c/dl\u003e\n        \u003c/div\u003e\n        \n            \u003c/div\u003e\n        "
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676251037_1951481301",
+      "id": "paragraph_1750676251037_1951481301",
+      "dateCreated": "2025-06-23 10:57:31.038",
+      "dateStarted": "2025-06-24 06:14:24.552",
+      "dateFinished": "2025-06-24 06:14:24.911",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sql\n\nUSE nessie ;",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:14:31.220",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676262502_1893261828",
+      "id": "paragraph_1750676262502_1893261828",
+      "dateCreated": "2025-06-23 10:57:42.506",
+      "dateStarted": "2025-06-24 06:14:31.230",
+      "dateFinished": "2025-06-24 06:14:31.308",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n# 1. Get the branch info",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-23 10:58:55.851",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e1. Get the branch info\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676324647_1318101403",
+      "id": "paragraph_1750676324647_1318101403",
+      "dateCreated": "2025-06-23 10:58:44.651",
+      "dateStarted": "2025-06-23 10:58:55.849",
+      "dateFinished": "2025-06-23 10:58:59.379",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sql\n\nSELECT * FROM finance_data.refs ;  -- get all branches",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:35:53.032",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "name\ttype\tsnapshot_id\tmax_reference_age_in_ms\tmin_snapshots_to_keep\tmax_snapshot_age_in_ms\nmain\tBRANCH\t6715692567472402315\tnull\tnull\tnull\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d71"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676280663_968252838",
+      "id": "paragraph_1750676280663_968252838",
+      "dateCreated": "2025-06-23 10:58:00.663",
+      "dateStarted": "2025-06-24 06:35:53.041",
+      "dateFinished": "2025-06-24 06:35:53.711",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n# 2. Get sample data\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-23 10:59:25.088",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e2. Get sample data\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676348359_1501589832",
+      "id": "paragraph_1750676348359_1501589832",
+      "dateCreated": "2025-06-23 10:59:08.360",
+      "dateStarted": "2025-06-23 10:59:25.088",
+      "dateFinished": "2025-06-23 10:59:25.114",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sql\n\nSELECT * FROM finance_data LIMIT 5 ;\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:35:56.259",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "year\tindustry_aggregation_nzsioc\tindustry_code_nzsioc\tindustry_name_nzsioc\tunits\tvariable_code\tvariable_category\tvalue\tindustry_code_anzsic06\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH01\tTotal income\tFinancial performance\t849597\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH04\tSales, government funding, grants and subsidies\tFinancial performance\t756842\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH05\tInterest, dividends and donations\tFinancial performance\t57192\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH07\tNon-operating income\tFinancial performance\t35563\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH08\tTotal expenditure\tFinancial performance\t736966\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d72"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676305176_271643900",
+      "id": "paragraph_1750676305176_271643900",
+      "dateCreated": "2025-06-23 10:58:25.188",
+      "dateStarted": "2025-06-24 06:35:56.267",
+      "dateFinished": "2025-06-24 06:35:57.190",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n# 3. Create an iceberg branch\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:15:53.915",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e3. Create an iceberg branch\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676393131_274238878",
+      "id": "paragraph_1750676393131_274238878",
+      "dateCreated": "2025-06-23 10:59:53.133",
+      "dateStarted": "2025-06-24 06:15:53.916",
+      "dateFinished": "2025-06-24 06:15:53.994",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sql\n\nALTER TABLE finance_data SET TBLPROPERTIES (\n    \u0027write.wap.enabled\u0027\u003d\u0027true\u0027\n);",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:36:00.813",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750677215119_811801292",
+      "id": "paragraph_1750677215119_811801292",
+      "dateCreated": "2025-06-23 11:13:35.124",
+      "dateStarted": "2025-06-24 06:36:00.825",
+      "dateFinished": "2025-06-24 06:36:00.947",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sql\n\nALTER TABLE finance_data CREATE BRANCH IF NOT EXISTS test_branch;\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:36:05.097",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676578431_638221756",
+      "id": "paragraph_1750676578431_638221756",
+      "dateCreated": "2025-06-23 11:02:58.435",
+      "dateStarted": "2025-06-24 06:36:05.105",
+      "dateFinished": "2025-06-24 06:36:05.257",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n# 3. Drop branch",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:16:07.792",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e3. Drop branch\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750677150278_718283425",
+      "id": "paragraph_1750677150278_718283425",
+      "dateCreated": "2025-06-23 11:12:30.280",
+      "dateStarted": "2025-06-24 06:16:07.790",
+      "dateFinished": "2025-06-24 06:16:07.808",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sql\n\nALTER TABLE finance_data DROP BRANCH test_branch;\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:35:47.278",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750677108671_1377697790",
+      "id": "paragraph_1750677108671_1377697790",
+      "dateCreated": "2025-06-23 11:11:48.675",
+      "dateStarted": "2025-06-24 06:35:47.288",
+      "dateFinished": "2025-06-24 06:35:47.572",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n# 4. Write data to branch",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:39:26.408",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e4. Write data to branch\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750747147210_1710811828",
+      "id": "paragraph_1750747147210_1710811828",
+      "dateCreated": "2025-06-24 06:39:07.213",
+      "dateStarted": "2025-06-24 06:39:26.410",
+      "dateFinished": "2025-06-24 06:39:26.494",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\ndev_branch_df \u003d spark.sql(\"SELECT * FROM finance_data WHERE year \u003d 2022 ;\")\n\ndev_branch_df.write.format(\"iceberg\") \\\n    .option(\"branch\", \"test_branch\") \\\n    .mode(\"append\") \\\n    .save(\"nessie.finance_data\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:36:13.721",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d73"
+            },
+            {
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d74"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676616808_1715044858",
+      "id": "paragraph_1750676616808_1715044858",
+      "dateCreated": "2025-06-23 11:03:36.809",
+      "dateStarted": "2025-06-24 06:36:13.731",
+      "dateFinished": "2025-06-24 06:36:16.054",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n# 5. Read from branch",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:41:59.909",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e5. Read from branch\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750747179916_2107312722",
+      "id": "paragraph_1750747179916_2107312722",
+      "dateCreated": "2025-06-24 06:39:39.917",
+      "dateStarted": "2025-06-24 06:41:59.910",
+      "dateFinished": "2025-06-24 06:42:00.025",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\ndev_branch_data \u003d spark.sql(\"SELECT * FROM finance_data VERSION AS OF \u0027test_branch\u0027\")\n\n# or, \n# dev_branch_data \u003d spark.read \\\n#     .format(\"iceberg\") \\\n#     .option(\"branch\", \"test_branch\") \\\n#     .load(\"finance_data\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:39:39.832",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750746591510_1859273222",
+      "id": "paragraph_1750746591510_1859273222",
+      "dateCreated": "2025-06-24 06:29:51.512",
+      "dateStarted": "2025-06-24 06:37:19.168",
+      "dateFinished": "2025-06-24 06:37:19.588",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\nz.show(dev_branch_data.limit(5))",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:30:49.426",
+      "progress": 100,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "year\tindustry_aggregation_nzsioc\tindustry_code_nzsioc\tindustry_name_nzsioc\tunits\tvariable_code\tvariable_category\tvalue\tindustry_code_anzsic06\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH01\tTotal income\tFinancial performance\t849597\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH04\tSales, government funding, grants and subsidies\tFinancial performance\t756842\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH05\tInterest, dividends and donations\tFinancial performance\t57192\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH07\tNon-operating income\tFinancial performance\t35563\n2022\tLevel 1\t99999\tAll industries\tDollars (millions)\tH08\tTotal expenditure\tFinancial performance\t736966\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d56"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750676704848_561536878",
+      "id": "paragraph_1750676704848_561536878",
+      "dateCreated": "2025-06-23 11:05:04.850",
+      "dateStarted": "2025-06-24 06:30:49.440",
+      "dateFinished": "2025-06-24 06:30:50.731",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n# 6. Check the data",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:42:23.428",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e6. Check the data\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750747331159_1452039525",
+      "id": "paragraph_1750747331159_1452039525",
+      "dateCreated": "2025-06-24 06:42:11.161",
+      "dateStarted": "2025-06-24 06:42:23.430",
+      "dateFinished": "2025-06-24 06:42:23.457",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\nfrom pyspark.sql.functions import col",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:37:26.156",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750678995988_1380446695",
+      "id": "paragraph_1750678995988_1380446695",
+      "dateCreated": "2025-06-23 11:43:15.990",
+      "dateStarted": "2025-06-24 06:37:26.167",
+      "dateFinished": "2025-06-24 06:37:26.409",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\n# no dup in main branch\ndev_branch_data.select(col(\"year\")).where(col(\"year\") \u003d\u003d 2022).count()",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-24 06:43:36.682",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "4635"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d83"
+            },
+            {
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d84"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750679063293_1944231125",
+      "id": "paragraph_1750679063293_1944231125",
+      "dateCreated": "2025-06-23 11:44:23.295",
+      "dateStarted": "2025-06-24 06:43:36.691",
+      "dateFinished": "2025-06-24 06:43:38.059",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-06-23 11:45:42.524",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1750679142520_1392047193",
+      "id": "paragraph_1750679142520_1392047193",
+      "dateCreated": "2025-06-23 11:45:42.523",
+      "status": "READY"
+    }
+  ],
+  "name": "1.3_branching_and_tagging",
+  "id": "2KYZZRPZU",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.12.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
