@@ -3,7 +3,7 @@
     {
       "text": "%pyspark\n\nspark",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:14:24.534",
+      "dateUpdated": "2025-06-30 05:55:51.973",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -36,14 +36,14 @@
       "jobName": "paragraph_1750676251037_1951481301",
       "id": "paragraph_1750676251037_1951481301",
       "dateCreated": "2025-06-23 10:57:31.038",
-      "dateStarted": "2025-06-24 06:14:24.552",
-      "dateFinished": "2025-06-24 06:14:24.911",
+      "dateStarted": "2025-06-30 05:55:52.025",
+      "dateFinished": "2025-06-30 05:56:19.913",
       "status": "FINISHED"
     },
     {
       "text": "%sql\n\nUSE nessie ;",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:14:31.220",
+      "dateUpdated": "2025-06-30 05:57:49.901",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -71,8 +71,8 @@
       "jobName": "paragraph_1750676262502_1893261828",
       "id": "paragraph_1750676262502_1893261828",
       "dateCreated": "2025-06-23 10:57:42.506",
-      "dateStarted": "2025-06-24 06:14:31.230",
-      "dateFinished": "2025-06-24 06:14:31.308",
+      "dateStarted": "2025-06-30 05:57:49.924",
+      "dateFinished": "2025-06-30 05:57:50.983",
       "status": "FINISHED"
     },
     {
@@ -120,7 +120,7 @@
     {
       "text": "%sql\n\nSELECT * FROM finance_data.refs ;  -- get all branches",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:35:53.032",
+      "dateUpdated": "2025-06-30 06:04:21.823",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -156,7 +156,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d71"
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d6"
             }
           ],
           "interpreterSettingId": "spark"
@@ -166,8 +166,8 @@
       "jobName": "paragraph_1750676280663_968252838",
       "id": "paragraph_1750676280663_968252838",
       "dateCreated": "2025-06-23 10:58:00.663",
-      "dateStarted": "2025-06-24 06:35:53.041",
-      "dateFinished": "2025-06-24 06:35:53.711",
+      "dateStarted": "2025-06-30 06:04:21.837",
+      "dateFinished": "2025-06-30 06:04:22.541",
       "status": "FINISHED"
     },
     {
@@ -215,7 +215,7 @@
     {
       "text": "%sql\n\nSELECT * FROM finance_data LIMIT 5 ;\n",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:35:56.259",
+      "dateUpdated": "2025-06-30 06:38:55.472",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -251,7 +251,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d72"
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d7"
             }
           ],
           "interpreterSettingId": "spark"
@@ -261,8 +261,8 @@
       "jobName": "paragraph_1750676305176_271643900",
       "id": "paragraph_1750676305176_271643900",
       "dateCreated": "2025-06-23 10:58:25.188",
-      "dateStarted": "2025-06-24 06:35:56.267",
-      "dateFinished": "2025-06-24 06:35:57.190",
+      "dateStarted": "2025-06-30 06:38:55.497",
+      "dateFinished": "2025-06-30 06:38:56.843",
       "status": "FINISHED"
     },
     {
@@ -420,9 +420,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "%sql\n\nALTER TABLE finance_data DROP BRANCH test_branch;\n",
+      "text": "%sql\n\n-- ALTER TABLE finance_data DROP BRANCH test_branch;\n\nALTER TABLE finance_data CREATE BRANCH test_branch\nAS OF VERSION 6715692567472402315 RETAIN 1 DAYS \nWITH SNAPSHOT RETENTION 1 SNAPSHOTS 2 DAYS\n",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:35:47.278",
+      "dateUpdated": "2025-06-30 06:44:24.983",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -450,8 +450,8 @@
       "jobName": "paragraph_1750677108671_1377697790",
       "id": "paragraph_1750677108671_1377697790",
       "dateCreated": "2025-06-23 11:11:48.675",
-      "dateStarted": "2025-06-24 06:35:47.288",
-      "dateFinished": "2025-06-24 06:35:47.572",
+      "dateStarted": "2025-06-30 06:44:25.008",
+      "dateFinished": "2025-06-30 06:44:25.365",
       "status": "FINISHED"
     },
     {
@@ -499,8 +499,8 @@
     {
       "text": "%pyspark\n\ndev_branch_df \u003d spark.sql(\"SELECT * FROM finance_data WHERE year \u003d 2022 ;\")\n\ndev_branch_df.write.format(\"iceberg\") \\\n    .option(\"branch\", \"test_branch\") \\\n    .mode(\"append\") \\\n    .save(\"nessie.finance_data\")",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:36:13.721",
-      "progress": 0,
+      "dateUpdated": "2025-06-30 06:44:33.358",
+      "progress": 50,
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -530,10 +530,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d73"
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d9"
             },
             {
-              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d74"
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d10"
             }
           ],
           "interpreterSettingId": "spark"
@@ -543,8 +543,8 @@
       "jobName": "paragraph_1750676616808_1715044858",
       "id": "paragraph_1750676616808_1715044858",
       "dateCreated": "2025-06-23 11:03:36.809",
-      "dateStarted": "2025-06-24 06:36:13.731",
-      "dateFinished": "2025-06-24 06:36:16.054",
+      "dateStarted": "2025-06-30 06:44:33.374",
+      "dateFinished": "2025-06-30 06:44:36.350",
       "status": "FINISHED"
     },
     {
@@ -592,7 +592,7 @@
     {
       "text": "%pyspark\n\ndev_branch_data \u003d spark.sql(\"SELECT * FROM finance_data VERSION AS OF \u0027test_branch\u0027\")\n\n# or, \n# dev_branch_data \u003d spark.read \\\n#     .format(\"iceberg\") \\\n#     .option(\"branch\", \"test_branch\") \\\n#     .load(\"finance_data\")",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:39:39.832",
+      "dateUpdated": "2025-06-30 06:44:41.260",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -620,14 +620,14 @@
       "jobName": "paragraph_1750746591510_1859273222",
       "id": "paragraph_1750746591510_1859273222",
       "dateCreated": "2025-06-24 06:29:51.512",
-      "dateStarted": "2025-06-24 06:37:19.168",
-      "dateFinished": "2025-06-24 06:37:19.588",
+      "dateStarted": "2025-06-30 06:44:41.269",
+      "dateFinished": "2025-06-30 06:44:41.569",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\nz.show(dev_branch_data.limit(5))",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:30:49.426",
+      "dateUpdated": "2025-06-30 06:03:08.031",
       "progress": 100,
       "config": {
         "colWidth": 12.0,
@@ -663,7 +663,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d56"
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d1"
             }
           ],
           "interpreterSettingId": "spark"
@@ -673,8 +673,8 @@
       "jobName": "paragraph_1750676704848_561536878",
       "id": "paragraph_1750676704848_561536878",
       "dateCreated": "2025-06-23 11:05:04.850",
-      "dateStarted": "2025-06-24 06:30:49.440",
-      "dateFinished": "2025-06-24 06:30:50.731",
+      "dateStarted": "2025-06-30 06:03:08.043",
+      "dateFinished": "2025-06-30 06:03:10.668",
       "status": "FINISHED"
     },
     {
@@ -722,7 +722,7 @@
     {
       "text": "%pyspark\n\nfrom pyspark.sql.functions import col",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:37:26.156",
+      "dateUpdated": "2025-06-30 06:03:14.466",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -750,14 +750,14 @@
       "jobName": "paragraph_1750678995988_1380446695",
       "id": "paragraph_1750678995988_1380446695",
       "dateCreated": "2025-06-23 11:43:15.990",
-      "dateStarted": "2025-06-24 06:37:26.167",
-      "dateFinished": "2025-06-24 06:37:26.409",
+      "dateStarted": "2025-06-30 06:03:14.477",
+      "dateFinished": "2025-06-30 06:03:14.735",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n# no dup in main branch\ndev_branch_data.select(col(\"year\")).where(col(\"year\") \u003d\u003d 2022).count()",
       "user": "anonymous",
-      "dateUpdated": "2025-06-24 06:43:36.682",
+      "dateUpdated": "2025-06-30 06:44:49.683",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -780,7 +780,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "4635"
+            "data": "9270"
           }
         ]
       },
@@ -793,10 +793,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d83"
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d11"
             },
             {
-              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d84"
+              "jobUrl": "http://bf4d8d45c7df:4040/jobs/job?id\u003d12"
             }
           ],
           "interpreterSettingId": "spark"
@@ -806,8 +806,8 @@
       "jobName": "paragraph_1750679063293_1944231125",
       "id": "paragraph_1750679063293_1944231125",
       "dateCreated": "2025-06-23 11:44:23.295",
-      "dateStarted": "2025-06-24 06:43:36.691",
-      "dateFinished": "2025-06-24 06:43:38.059",
+      "dateStarted": "2025-06-30 06:44:49.693",
+      "dateFinished": "2025-06-30 06:44:50.930",
       "status": "FINISHED"
     },
     {
